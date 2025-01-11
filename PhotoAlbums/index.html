@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Photo Albums</title>
+<STYLE>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    background-color:#CACED2;
+	overflow:inherit;
+}
+form {
+    display:inline;
+}
+#Container, #Header,    #Footer {
+	padding: 0px;
+	margin: 0px;
+}
+
+#Header{
+   background-image:url(images/images_center.jpg);
+   background-position:left top;
+   background-repeat:repeat-x;			
+   height:110px;   
+   width: 100%;
+  
+   
+}
+.Header_left {
+  background-image:url(images/images_left.jpg);
+   background-position:left top;
+   background-repeat: no-repeat;			
+   height:110px;
+   width: 36px;
+   margin:0px;
+   padding:0px;
+    
+}
+.Header_right {
+  background-image:url(images/images_right.jpg);
+   background-position:left top;
+   background-repeat: no-repeat;			
+   height:110px;
+   width: 36px;
+   margin:0px;
+   padding:0px;
+   
+}
+
+
+#Container {
+	margin: 0px auto;
+	width: 910px;
+	height:auto;
+}
+
+
+#Footer {
+	clear: both;
+	height:61px;
+	padding-top:15px;
+}
+
+
+
+
+
+#top_Name {
+	padding-top:5px;	
+	width: auto;
+	font-family: Tahoma, "Courier New", Courier, mono;
+	font-size: 15px;
+	color: #40454A;
+	font-style: normal;
+	font-weight: bold;
+	text-align:left;
+	line-height:30px;
+		
+}
+#bottom_Name {
+	font-family: Tahoma, "Courier New", Courier, mono;
+	font-size: 9px;
+	color:#656B71;
+	font-style: normal;
+	font-weight: normal;
+	text-align:left;	
+	margin:0px;	
+	padding:0px;	
+}
+
+
+#content_main {
+	margin:0px;
+	padding: 0px;
+	width: 100%;		
+	
+}
+
+
+#BottomMenu {
+	background-image:url(images/center_footer.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	height:61px;
+   	text-align: center;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #7F7D7D;
+}
+#BottomMenu a{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #7F7D7D;
+	text-decoration:none;
+}
+
+.footer_left {
+  background-image:url(images/left_footer.jpg);
+   background-position:left top;
+   background-repeat: no-repeat;			
+   height:61px;
+   width: 32px;
+   margin:0px;
+   padding:0px;
+    
+}
+.footer_right {
+  background-image:url(images/right_footer.jpg);
+   background-position:left top;
+   background-repeat: no-repeat;			
+   height:61px;
+   width: 32px;
+   margin:0px;
+   padding:0px;
+   
+}
+.text_footer {
+/*//height:14px;*/
+	text-align: center;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #464646;
+	font-style:normal;
+	line-height: 1;
+	margin:0px;
+	margin-top:3px;	
+}
+#buttons {
+	cursor:pointer;	
+	width:28px;
+	height:28px; 	
+	margin:0px;
+	padding:0px;	
+		
+}
+#buttons button {
+	cursor:pointer;
+	border: none;
+	width: 100%;
+	height: 100%;
+
+}
+#buttons button:hover {
+
+width:27px;
+height:27px;
+margin:1px;
+
+}
+
+#cont_foto {
+	width:204px;
+	height:auto;
+	height:320px;	
+	float:left;
+/*	margin: 10px 4px 10px 4px; */
+/*	margin: 10px 4px 10px 0px; */
+
+	padding:5px;
+}
+#im_foto {
+	background-image:url(images/fon_images.jpg);
+	background-position:center;
+	background-repeat:no-repeat;	
+	height:159px;
+	width:207px;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+
+#im_foto img {
+	width:198px;
+	height:148px;	
+	display:block;	
+	padding-top:3px;
+	margin:0px;
+	margin-left: 3px;
+/*	//margin-left: -2px;*/
+	border: 0px;
+}
+#bottom_foto {
+	color:#5E5E5E;
+/*	//height:21px;*/
+	font-family: Tahoma, "Courier New", Courier, mono;
+	font-size:10px;
+	font-weight: normal;
+	text-align: justify;
+	text-decoration: none;
+	margin:10px;
+	text-indent: 15px;
+	line-height: 1.5;
+	float:left;
+	
+}
+#bottom_foto a { color:#5E5E5E; }
+
+#bottom_foto:hover {	
+	color:#FF0000;	
+}
+#titl_foto {
+	font-family: Tahoma, "Courier New", Courier, mono;
+	font-size:10px;
+	color: #40454A;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;	
+	text-decoration: none;
+	margin:10px;
+}
+
+
+.tab_right {
+ padding-top:5px;
+/* //padding-top: 6px;*/
+
+}
+.photoThumb 
+{
+
+background:#FFFFFF none repeat scroll 0%;
+border:1px solid #888888;
+clear:both;
+float:none;
+margin:1px;
+padding:6px;
+}
+
+
+.img-shadow {
+/*background:transparent url(images/shadowAlpha.png) no-repeat scroll right bottom !important;*/
+
+clear:both;
+float:left;
+/*margin:20px 0pt 0pt 17px !important;*/
+margin:0px 0pt 0pt 0px !important;
+}
+.img-shadow img {
+background-color:#FFFFFF;
+border:1px solid #A9A9A9;
+display:block;
+margin:-6px 6px 6px -6px;
+padding:4px;
+position:relative;
+}
+.centered_div {
+
+}
+
+</STYLE>
+<![if lt IE 7]>
+<![if gte IE 5.5]>
+
+<script type="text/javascript">
+
+function fixPNG(element)
+{
+        element.runtimeStyle.backgroundImage="none"; //убираем фоновое изображение
+  if (/MSIE (5\.5|6).+Win/.test(navigator.userAgent))
+  {
+
+
+         var src;
+	
+      if (src)
+      {
+        src = src[1]; //берем из значения свойства background-шmage только адрес картинки
+        element.runtimeStyle.backgroundImage="none"; //убираем фоновое изображение
+      }
+
+  }
+
+/*
+  //
+    element.runtimeStyle.backgroundColor = '#666666';
+    var src;
+	
+      src = element.currentStyle.backgroundImage.match(/url\("(.+\.png)"\)/i);
+      if (src)
+      {
+        src = src[1]; 
+        element.runtimeStyle.backgroundImage="none"; 
+      }
+
+    
+
+//    if (src) element.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "',sizingMethod='scale')";
+//    if (src) element.runtimeStyle.backgroundColor = "gray";
+  }
+  */
+}
+
+</script>
+
+<style type="text/css"> 
+.iePNG
+{
+	background: expression(fixPNG(this)); 
+
+}
+</style>
+
+<![endif]>
+<![endif]>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="Container" >
+<div id="Header"><table cellpadding="0" cellspacing="0"><tr><td>
+<div class="Header_left"></div>
+</td><td align="center" width="100%">
+<div id="top_Name">Photo Albums</div>
+<div id="bottom_Name"><!--%PHOTOALBUM_TITLE%--></div>
+</td><td>
+<div class="Header_right"></div>
+</td></tr></table>
+</div>
+
+<div id="content_main">
+<table cellpadding="0" cellspacing="0"><tr><td align="center">
+
+<center><br/>
+<div id="cont_foto" >
+										<div id="titl_foto" > Ancient Site Photos </div>
+										<!-- <div id="im_foto"> -->
+										<div class="centered_div">
+										<div class="img-shadow iePNG">
+										<a href="http://thelamplight.ca/PhotoAlbums/album_1418525812" border=0>
+											<img src="http://thelamplight.ca/PhotoAlbums/album_1418525812/thumb_Tie_creek_directions.jpg" class=""></a>
+											</div></div>
+											<br/>
+										<div id="bottom_foto">
+										<a href="http://thelamplight.ca/PhotoAlbums/album_1418525812" style="text-decoration:none; " TITLE="Ancient Site Photos"> 
+										Ancient Site Photos
+										</a></div>
+										</div>
+
+
+</td></tr></table>
+
+
+
+</div>
+
+
+</body>
+</html>

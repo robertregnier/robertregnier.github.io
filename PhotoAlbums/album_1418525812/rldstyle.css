@@ -1,0 +1,193 @@
+<style type="text/css">
+<!--
+body
+{
+	background: %PHOTOALBUM_BACKGROUND%;
+	color: %PHOTOALBUM_FOREGROUND%;
+}
+
+BUTTON.darkButton
+{
+    background: #63637C; /* #302F55; */
+    color: #fff;
+    font: 11px "lucida grande",arial,helvetica,sans-serif;
+    border: 1px #D1DADE solid;
+    cursor: pointer;
+    float: center;
+    padding: 2px 8px 3px 8px;
+    margin: 2px;
+    -moz-border-radius: 4px;
+}
+
+BUTTON.darkButton:hover
+{
+    background: #111;
+}
+
+
+
+img.thumbNail
+{
+	background: #fff;
+	border: 1px solid #888;
+	padding: 6px;
+	margin: 0px 10px 10px 10px;
+	float: none;
+	clear: both;
+}
+
+div#thumbBox
+{
+/*
+//	width: 80%;
+//	margin-left: 10%;
+//	margin-right: 10%;
+//	margin-bottom: 40px;
+	text-align: center;
+//	float: none;
+//	clear: both;
+*/
+}
+
+div#photoAlbumHeader   
+{
+	padding: 5px;
+	margin: 0px 5px 15px 10px;
+	border-bottom: 1px solid %PHOTOALBUM_FOREGROUND%;
+	text-align: %PHOTOALBUM_TITLE_ALIGN%;
+	font-weight: bold;
+}
+
+div#pageLinks
+{
+	margin: 5px 10px 10px 5px;
+	padding: 8px;
+	text-align: center;
+	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+A.currentPage
+{
+	background: %PHOTOALBUM_FOREGROUND%;
+	color:  %PHOTOALBUM_BACKGROUND%;
+	text-decoration: none;
+	padding: 3px 7px 3px 7px;
+	border: 1px solid %PHOTOALBUM_BACKGROUND%;
+}
+
+A.pageLink
+{
+	color: %PHOTOALBUM_FOREGROUND%;
+	background: %PHOTOALBUM_BACKGROUND%;
+	text-decoration: none;
+	padding: 3px 7px 3px 7px;
+	border: 1px outset %PHOTOALBUM_FOREGROUND%;
+	border-top-width: 2px;
+}
+
+A.pageLink:hover
+{
+	background: %PHOTOALBUM_FOREGROUND%;
+        color: %PHOTOALBUM_BACKGROUND%;	
+}
+
+/*.photoAlbumTitle
+{
+	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	margin: 3px 0px 3px 0px;
+}
+*/
+.photoAlbumTitle
+{
+//	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-family: %TEXT_FONT_FAMILY%;
+	margin: 3px 0px 3px 0px;
+
+
+}
+.photoAlbumDescription
+{
+//	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-family: %DESC_FONT_FAMILY%;
+	margin: 3px 0px 3px 0px;
+
+}
+
+.footerDiv
+{
+	float: ;
+}
+
+#photo_title
+{
+	align: center; 
+	font-weight:bold;  
+	color:#000000; 
+}
+#photo_desc
+{
+	align: center;  
+	font-weight:bold;  
+	color:#000000; 
+}
+
+#PR_overlay {
+
+	position: absolute;
+
+	z-index:100;
+
+	top: 0px;
+
+	left: 0px;
+
+	background-color:#000;
+
+	filter:alpha(opacity=60);
+
+	-moz-opacity: 0.6;
+
+	opacity: 0.6;
+
+	display: none;
+
+}
+
+.commentsBottomColor {
+border-bottom-color: %PHOTOALBUM_FOREGROUND%;
+}
+
+#PR_window TD 
+{
+	border-bottom-color: #000000;
+}
+
+.PR_window_css {
+
+	position: absolute;
+
+	background: #ffffff;
+
+	z-index: 102;
+
+	color:#000000;
+
+	display: none;
+/*	visibility: hidden;*/
+
+	border: 4px solid #525252;
+
+	text-align:left;
+	top: 20px;
+	width: 900px;
+	height: 750px;
+	overflow: auto;
+	
+
+}
+
+-->
+</style>
