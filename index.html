@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Language" content="en-ca">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>A new understanding of physics, archeology, and reality.</title>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Leu6bcqAAAAAG5UaWg95aMhAhzwkKi63ADY2HDZ"></script>
     <style>
         .style1 {
             border-style: hidden;
@@ -28,20 +30,6 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: x-small;
-        }
-
-        .header-text {
-            font-family: 'Great Vibes', cursive;
-            font-size: xxx-large;
-            color: palegoldenrod;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .sub-header-text {
-            font-family: 'Great Vibes', cursive;
-            font-size: xx-large;
-            color: palegoldenrod;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
     <meta content="art,shamanic,shaman,sculptures,paintings,OBE,remote viewing,shamanic teachings,new shamanic teachings,advanced shaman,free shamanicteachings,chache blades,projectile points for sale,Solutrean,cave art,petroglyphs sites,Sasquatch,sasquatch images,sasquatch information,sasquatch what are they,what is a sasquatch,who are the sasquatches,sasquatch sculptures,Alaska,Costa Rica Stone Spheres,Ghost Dance,Ohio Serpent Mound,Solutreans,Clovis people,working with shrines,Cucuteni Trypillian,body mudras,Vastu Vidya,medicine bags,Solutrean Confederation,Douxcan"
@@ -123,6 +111,74 @@
   gtag('config', 'G-C991MNST01');
 
 </script>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+<script>
+    /* paste this in verbatim */
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+
+    /* customize formbutton here*/
+    formbutton("create", {
+        action: "https://formspree.io/xzzzwebw",
+        title: "Contact",
+        fields: [
+            {
+                type: "email",
+                label: "Email:",
+                name: "email",
+                required: true,
+                placeholder: "your@email.com"
+            },
+            {
+                type: "textarea",
+                label: "Message:",
+                name: "message",
+                placeholder: "What's on your mind?",
+            },
+            { type: "submit" }
+        ],
+        styles: {
+            title: {
+                backgroundColor: "gray"
+            },
+            button: {
+                backgroundColor: "gray"
+            }
+        },
+        initiallyVisible: false
+    });
+
+    // Add reCAPTCHA integration
+    document.addEventListener("formbutton-submit", async function(event) {
+        event.preventDefault();
+
+        // Get reCAPTCHA token
+        const token = await grecaptcha.execute("6Leu6bcqAAAAAG5UaWg95aMhAhzwkKi63ADY2HDZ", { action: "submit" });
+
+        // Add token to Formspree data
+        const formData = event.detail.formData;
+        formData.append("g-recaptcha-response", token);
+
+        // Send form data to Formspree
+        fetch(event.detail.action, {
+            method: "POST",
+            body: formData,
+        })
+            .then((response) => {
+                if (response.ok) {
+                    alert("Form submitted successfully!");
+                } else {
+                    alert("There was a problem submitting the form.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                alert("There was a problem submitting the form.");
+            });
+    });
+</script>
+
 </body>
 
 </html>
